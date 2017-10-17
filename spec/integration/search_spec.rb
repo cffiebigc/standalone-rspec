@@ -1,11 +1,8 @@
 require 'spec_helper'
 
-feature 'Search for RSpec' do
-  scenario 'should find the RSpec homepage' do
+feature 'Visit homepage' do
+  scenario 'should find portal homepage' do
     visit '/'
-    fill_in 'q', with: 'RSpec'
-    click_button 'Recherche Google'
-
-    expect(page).to have_content('rspec.info')
+    expect(page).to have_content('Integrarte con un banco ahora')
   end
 end

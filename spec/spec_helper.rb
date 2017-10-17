@@ -20,7 +20,7 @@ RSpec.configure do |config|
   Capybara.run_server = false
 
   # Define your app host here
-  Capybara.app_host = 'http://www.google.fr'
+  Capybara.app_host = 'https://developers.bci.cl'
 
   Capybara.current_driver = :poltergeist
   Capybara.javascript_driver = :poltergeist
