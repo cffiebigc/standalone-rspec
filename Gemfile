@@ -1,9 +1,8 @@
 source :rubygems
 
 group :test do
-  gem "capybara"
-  gem "mechanize"
-  gem "capybara-mechanize"
-  gem "steak"
-  gem "rspec"
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'rake'
+  gem 'rspec'
 end
