@@ -22,7 +22,7 @@ RSpec.configure do |config|
   # Define your app host here
   Capybara.app_host = 'https://developers.bci.cl'
 
-  Capybara.current_driver = :poltergeist
+  Capybara.default_driver = :poltergeist
   Capybara.javascript_driver = :poltergeist
 
   # Don't forget to tell to RSpec to include Capybara :)
