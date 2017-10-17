@@ -1,13 +1,11 @@
-require "spec_helper"
+require 'spec_helper'
 
-feature "Search for RSpec" do
+feature 'Search for RSpec' do
+  scenario 'should find the RSpec homepage' do
+    visit '/'
+    fill_in 'q', with: 'RSpec'
+    click_button 'Recherche Google'
 
-  scenario "should find the RSpec homepage" do
-    visit "/"
-    fill_in "q", :with => "RSpec"
-    click_button "Recherche Google"
-
-    page.should have_content("RSpec.info")
+    expect(page).to have_content('rspec.info')
   end
-
 end
