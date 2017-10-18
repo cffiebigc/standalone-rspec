@@ -6,13 +6,13 @@ This works is inspired by the idea of https://github.com/thuss/standalone-cucumb
 
 Use this test project layout when you want to test a site that is not rails/sinatra/ruby powered and thus with no comfortable test framework.
 
-I've included a simple search_spec.rb example that uses Google. To switch to use your own development or staging server adjust the URL in spec_helper.rb. I have this example project setup to use Capybara with Webdriver (Selenium) and mechanize but you can easily switch this to use Culerity, Webrat, env-js by editing spec_helper.rb.
+To switch to use your own development or staging server adjust the URL in spec_helper.rb. I have this example project setup to use Capybara with Webdriver (Selenium) and poltergeist but you can easily switch this to use Culerity, Webrat, env-js by editing spec_helper.rb.
 
 Pull requests with updates/enhancements/bug fixes are always welcome!
 
 == Project Layout
 
-* spec/integration/*_spec.rb : RSpec/Steak scenarii
+* spec/integration/*_spec.rb : Specs
 * spec/spec_helper.rb : configures the driver and the hostname to use
 * spec/support/ : additional configuration
 
@@ -35,7 +35,6 @@ Pull requests with updates/enhancements/bug fixes are always welcome!
 
 * http://relishapp.com/rspec
 * http://github.com/jnicklas/capybara (for actions such as click_link, click_button, etc...)
-* https://github.com/cavalle/steak (for test syntax featue, scenario, ...)
 
 == Contributors
 
